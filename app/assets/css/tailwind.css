@@ -43,6 +43,14 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  /*cores do meu projeto*/
+  --color-ths-green: #1FE200;
+  --color-ths-black: #121212;
+  --color-ths-card: #1F1F1F;
+  --color-ths-textMuted: #CCCCCC;
+
+
 }
 
 :root {
@@ -122,3 +130,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+ /* Esconde a barra de rolagem no Chrome, Safari e Opera */
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Esconde a barra de rolagem no IE, Edge e Firefox */
+  * {
+    -ms-overflow-style: none;  /* IE e Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

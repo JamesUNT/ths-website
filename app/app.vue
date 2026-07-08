@@ -1,5 +1,5 @@
 <template>
-  <div>
-<Button>shadcn-vue Button</Button>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

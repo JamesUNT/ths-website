@@ -5,12 +5,15 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/css/tailwind.css'],
+  modules: ['shadcn-nuxt', '@nuxt/image', 'nuxt-mdi'],
+  mdi: {
+    defaultSize: '1.5em'
+  },
   vite: {
     plugins: [
       tailwindcss(),
     ],
   },
-  modules: ['shadcn-nuxt'],
    shadcn: {
     /**
      * Prefix for all the imported component.
