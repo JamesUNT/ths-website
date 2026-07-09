@@ -4,7 +4,7 @@
       class="z-50 bg-black text-white shadow-md backdrop-blur-md bg-opacity-80 py-4 w-full"
     >
       <div
-        class="max-w-7xl mx-auto px-4 items-center grid grid-cols-[1fr_1fr_auto]"
+        class="max-w-7xl mx-auto px-4 md:px-6 flex flex-wrap items-center justify-between"
       >
         <div
           class="flex gap-2 items-center text-xs font-mono text-gray-400 tracking-wider uppercase"
@@ -13,12 +13,30 @@
           <p>Estética a Domicílio</p>
         </div>
 
-        <div
-          class="col-span-full row-start-3"
-          :class="!isMenuOpen ? 'hidden' : 'block'"
-        >
+        <div class="flex flex-row items-center gap-2">
+          <div
+            class="flex flex-row items-center gap-1 bg-ths-green p-2 text-black font-semibold uppercase"
+          >
+            <NuxtLink to="/agendar">
+              <MdiIcon icon="mdiWhatsapp" />
+            </NuxtLink>
+          </div>
+
+          <div>
+            <button
+              @click="toggleMenu"
+              class="p-2 text-white font-semibold uppercase flex items-center"
+            >
+              <MdiIcon :icon="!isMenuOpen ? 'mdiMenu' : 'mdiClose'" />
+            </button>
+          </div>
+        </div>
+
+        <div class="w-full mt-4" :class="!isMenuOpen ? 'hidden' : 'block'">
           <nav aria-label="Navegação principal">
-            <ul class="flex flex-col font-medium text-center gap-4">
+            <ul
+              class="bg-ths-black flex flex-col items-start font-medium gap-2 *:uppercase *:font-bold *:ml-2"
+            >
               <li>
                 <NuxtLink
                   to="/"
@@ -61,23 +79,6 @@
               </li>
             </ul>
           </nav>
-        </div>
-
-        <div class="flex flex-row items-center justify-end gap-2">
-          <div
-            class="flex flex-row items-center gap-1 bg-ths-green p-2 text-black font-semibold uppercase"
-          >
-            <NuxtLink to="/agendar"> <MdiIcon icon="mdiWhatsapp" /> </NuxtLink>
-          </div>
-
-          <div>
-            <button
-              @click="toggleMenu"
-              class="p-2 text-white font-semibold uppercase"
-            >
-              <MdiIcon :icon="!isMenuOpen ? 'mdiMenu' : 'mdiClose'" />
-            </button>
-          </div>
         </div>
       </div>
     </header>
