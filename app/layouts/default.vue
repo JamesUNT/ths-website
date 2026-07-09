@@ -7,7 +7,7 @@
         class="max-w-7xl mx-auto px-4 items-center grid grid-cols-[1fr_1fr_auto]"
       >
         <div
-          class="flex gap-2 text-xs font-mono text-gray-400 tracking-wider uppercase"
+          class="flex gap-2 items-center text-xs font-mono text-gray-400 tracking-wider uppercase"
         >
           <NuxtImg sizes="sm:40px md:50px" format="svg" src="Logo-THS.svg" />
           <p>Estética a Domicílio</p>
