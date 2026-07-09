@@ -13,16 +13,57 @@
           <p>Estética a Domicílio</p>
         </div>
 
+        <nav aria-label="Navegação principal desktop" class="hidden md:block">
+          <ul
+            class="flex flex-row gap-6 font-medium text-xs tracking-wider uppercase text-gray-400"
+          >
+            <li>
+              <NuxtLink to="/" class="hover:text-ths-green transition-colors"
+                >Como funciona</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/servicos"
+                class="hover:text-ths-green transition-colors"
+                >Serviços</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/pacotes"
+                class="hover:text-ths-green transition-colors"
+                >Pacotes</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/motos"
+                class="hover:text-ths-green transition-colors"
+                >Motos</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                to="/contato"
+                class="hover:text-ths-green transition-colors"
+                >Contato</NuxtLink
+              >
+            </li>
+          </ul>
+        </nav>
+
         <div class="flex flex-row items-center gap-2">
           <div
             class="flex flex-row items-center gap-1 bg-ths-green p-2 text-black font-semibold uppercase"
           >
-            <NuxtLink to="/agendar">
+            <NuxtLink class="flex items-center gap-1" to="/agendar">
               <MdiIcon icon="mdiWhatsapp" />
+              <span class="hidden md:inline">Whatsapp</span>
             </NuxtLink>
           </div>
 
-          <div>
+          <div class="md:hidden">
             <button
               @click="toggleMenu"
               class="p-2 text-white font-semibold uppercase flex items-center"
