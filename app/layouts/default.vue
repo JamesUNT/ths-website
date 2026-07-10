@@ -23,30 +23,22 @@
               >
             </li>
             <li>
-              <NuxtLink
-                to="/servicos"
-                class="hover:text-ths-green transition-colors"
+              <NuxtLink class="hover:text-ths-green transition-colors"
                 >Serviços</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink
-                to="/pacotes"
-                class="hover:text-ths-green transition-colors"
+              <NuxtLink class="hover:text-ths-green transition-colors"
                 >Pacotes</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink
-                to="/motos"
-                class="hover:text-ths-green transition-colors"
+              <NuxtLink class="hover:text-ths-green transition-colors"
                 >Motos</NuxtLink
               >
             </li>
             <li>
-              <NuxtLink
-                to="/contato"
-                class="hover:text-ths-green transition-colors"
+              <NuxtLink class="hover:text-ths-green transition-colors"
                 >Contato</NuxtLink
               >
             </li>
@@ -80,7 +72,6 @@
             >
               <li>
                 <NuxtLink
-                  to="/"
                   @click="toggleMenu"
                   class="hover:text-ths-green block py-1"
                   >Como funciona</NuxtLink
@@ -88,7 +79,6 @@
               </li>
               <li>
                 <NuxtLink
-                  to="/servicos"
                   @click="toggleMenu"
                   class="hover:text-ths-green block py-1"
                   >Serviços</NuxtLink
@@ -96,7 +86,6 @@
               </li>
               <li>
                 <NuxtLink
-                  to="/pacotes"
                   @click="toggleMenu"
                   class="hover:text-ths-green block py-1"
                   >Pacotes</NuxtLink
@@ -104,7 +93,6 @@
               </li>
               <li>
                 <NuxtLink
-                  to="/motos"
                   @click="toggleMenu"
                   class="hover:text-ths-green block py-1"
                   >Motos</NuxtLink
@@ -112,7 +100,6 @@
               </li>
               <li>
                 <NuxtLink
-                  to="/contato"
                   @click="toggleMenu"
                   class="hover:text-ths-green block py-1"
                   >Contato</NuxtLink

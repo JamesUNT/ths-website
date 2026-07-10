@@ -51,5 +51,19 @@
         </div>
       </div>
     </section>
+    <section class="max-w-7xl mx-auto px-4 md:px-6 bg-ths-black py-8">
+      <div class="flex flex-row items-center gap-2">
+        <div class="h-0.5 w-6 bg-ths-green" />
+        <p class="text-xs text-ths-green tracking-wider font-mono uppercase">
+          Simples assim
+        </p>
+      </div>
+      <div
+        class="flex flex-col *:text-6xl *:md:text-8xl uppercase font-bold text-white py-2"
+      >
+        <h1>Como</h1>
+        <h1><span class="text-ths-green">funciona</span></h1>
+      </div>
+    </section>
   </div>
 </template>
